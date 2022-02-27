@@ -14,8 +14,14 @@ Once `Anaconda` is installed, run the following to install the required dependen
 conda env create -f envsetup/finger_cursor_research.yaml
 ```
 
-After all requirements are installed, run the following to activated the environment:
+After all requirements are installed, run the following to activate the environment:
 
 ```
 conda activate finger_cursor_research
+```
+
+To deactivate, run
+
+```
+conda deactivate
 ```
