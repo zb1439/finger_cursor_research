@@ -36,7 +36,8 @@ _config_dict = dict(
         BATCH_SIZE=64,
     ),
     MODEL=dict(
-        NAME="",
+        NAME="HeuristicModel",
+        GESTURES=["n/a", "drag", "point", "swipe", "click", "right-click"],
     ),
     EVALUATOR=dict(
         METRICS=["accuracy", "precision", "recall", "f1_score", "confusion_matrix"],
