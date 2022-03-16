@@ -29,8 +29,11 @@ except ImportError:
 
 _config_dict = dict(
     DATASET=dict(
-        TRAIN_AUG=[
-            ("Resize", dict(w=224, h=224)),
+        TRAIN_AUG=[  # TODO: implement these data aug
+            ("Resize", dict(w=224, h=224)),  # resize
+            ("RandomCrop", dict(scale=[0.9, 1.5],)),  # random crop
+            ("RandomFlip", dict(prob=0.5)),  # random flip, do we need to change the sequence of coords?
+            ("CoordNoise", dict(std=0.3)),  # add Gaussian noise to the coords
         ],
         TEST_AUG=[],
         BATCH_SIZE=64,
